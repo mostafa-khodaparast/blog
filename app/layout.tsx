@@ -8,7 +8,9 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "unique Blog",
   description: "",
-
+  icons: {
+    icon: '/images/faviconblog.png'
+  }
 };
 
 export default function RootLayout({
