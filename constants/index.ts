@@ -3,7 +3,7 @@ import { CategoryProps, NavLink } from "@/types/types";
 export const navlinks: NavLink[] = [
     {
         title: 'Home',
-        path: '#home'
+        path: '/'
     },
     {
         title: 'Contact',

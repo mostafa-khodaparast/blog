@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Featured />
       <CategoryList />
-      <div className="flex flex-col md:flex-row justify-between">
+      <div className="flex flex-col md:flex-row md:justify-between">
         <CardList />
         <Menu />
       </div>

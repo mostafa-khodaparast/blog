@@ -11,7 +11,13 @@
         @apply hover:text-purple-600 font-semibold transition-colors duration-300
     }
     h2{
-        @apply font-bold text-xl px-4
+        @apply font-bold text-xl px-2 my-4
+    }
+    h4{
+        @apply dark:text-gray-400 font-semibold
+    }
+    button{
+        @apply font-semibold px-4 py-3 w-28 bg-custom-primary text-white dark:bg-slate-300 rounded-md dark:text-custom-primary
     }
 }
 
@@ -32,4 +38,12 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.ql-container{
+    font-size: 20px !important;
+}
+
+.quill >.ql-container>.ql-editor.ql-blank::before{
+    color: #b3b3b1;
 }

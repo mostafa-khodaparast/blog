@@ -12,9 +12,9 @@ export default function CardItem({ card }) {
                 width={450}
                 height={300}
                 alt="postImage"
-                className="self-center object-cover rounded-md aspect-video"
+                className="self-center object-cover rounded-md aspect-video md:w-[300px] md:h-[200px]"
             />
-            <div className="flex flex-col space-y-3 justify-around items-start md:pl-8">
+            <div className="flex flex-col space-y-3 justify-around items-start pl-4">
                 <div className="flex items-center space-x-2 font-bold text-sm">
                 <p>{date}</p>
                 <p>{category}</p>
@@ -22,9 +22,7 @@ export default function CardItem({ card }) {
                 <p className="text-sm font-semibold">
                     {description}
                 </p>
-                <button
-                    className="font-semibold px-4 py-3 bg-custom-primary text-white dark:bg-slate-300 rounded-md dark:text-custom-primary"
-                >
+                <button>
                     read more
                 </button>
             </div>

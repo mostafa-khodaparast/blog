@@ -7,15 +7,15 @@ export default function Auth() {
 
     return (
         <>
-            {isAuthed ? (
+            {isAuthed === 'yes' ? (
                 <>
-                    <Link href="/newPost">add post</Link>
+                    <Link href="/addPost">add post</Link>
                     <span>
                         signout
                     </span>
                 </>
             ) : (
-                <Link href="/singIn">singIn</Link>
+                <Link href="/login">singIn</Link>
             )}
         </>
     )
