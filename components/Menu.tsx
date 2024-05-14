@@ -1,8 +1,11 @@
-import { categories } from "@/constants";
-import Image from "next/image";
+import { getCategories } from "@/actions"
+import Image from "next/image"
 import Link from 'next/link'
 
-export default function Menu() {
+export default async function Menu() {
+
+  const categories = await getCategories()
+
   return (
     <div className="md:basis-2/5 px-4">
       <div>
@@ -29,8 +32,8 @@ export default function Menu() {
       <div>
         <h2>Discover by category</h2>
         <div className="flex flex-wrap">
-          {categories.map(item => (
-            <Link href={item.path} key={item.path} style={{ backgroundColor: item.color }} className="max-w-max rounded-lg px-3 py-2 m-1">
+          {categories?.map(item => (
+            <Link href={item.id} key={item.id}  className="max-w-max rounded-lg px-3 py-2 m-1 text-yellow-50 bg-custom-primary">
               {item.title}
             </Link>
           ))}

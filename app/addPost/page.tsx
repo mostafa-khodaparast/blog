@@ -2,13 +2,20 @@
 
 import { useState } from "react"
 import ReactQuill from "react-quill"
-import "react-quill/dist/quill.bubble.css"
+import { useRouter } from "next/navigation"
 import { Video, ImagePlus } from "lucide-react"
+import { useSession } from "next-auth/react"
+import "react-quill/dist/quill.bubble.css"
 
 export default function Page() {
 
     const [value, setValue] = useState<string>('')
-    console.log(open)
+    const router = useRouter()
+    const {status} = useSession()
+
+    if(status === 'unauthenticated'){
+        router.push('/login')
+    }
 
     return (
         <div>

@@ -4,8 +4,8 @@ export type NavLink = {
 }
 
 export type CategoryProps = {
+    id: string,
+    slug: string,
     title: string,
-    image: string,
-    path: string,
-    color: string
+    img?: string | null
 }

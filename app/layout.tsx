@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Footer, Navbar } from "@/components"
 import AppThemeProvider from "@/providers/ThemeProvider"
+import AuthSessionProvider from "@/providers/AuthSessionProvider";
 import "./globals.css"
 
 
@@ -22,11 +23,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body>
         <AppThemeProvider>
-          <div className="container mx-auto">
-            <Navbar />
-            {children}
-            <Footer />
-          </div>
+          <AuthSessionProvider>
+            <div className="container mx-auto">
+              <Navbar />
+              {children}
+              <Footer />
+            </div>
+          </AuthSessionProvider>
         </AppThemeProvider>
       </body>
     </html >

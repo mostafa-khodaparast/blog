@@ -17,7 +17,7 @@
         @apply dark:text-gray-400 font-semibold
     }
     button{
-        @apply font-semibold px-4 py-3 w-28 bg-custom-primary text-white dark:bg-slate-300 rounded-md dark:text-custom-primary
+        @apply font-semibold px-2 py-1 w-28 bg-custom-primary text-white dark:bg-slate-300 rounded-md dark:text-custom-primary
     }
 }
 

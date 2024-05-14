@@ -6,7 +6,7 @@ export default function CardItem({ card }) {
     const { date,category, description, image } = card
 
     return (
-        <div className="mt-6 flex flex-col md:flex-row md:justify-center">
+        <div className="mt-6 flex flex-col md:flex-row">
             <Image
                 src={image}
                 width={450}

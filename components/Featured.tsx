@@ -1,7 +1,8 @@
-import Image from "next/image";
+import Image from "next/image"
 
 
 export default function Featured() {
+
   return (
     <div className="m-8">
       <h1 className="text-4xl font-bold text-center">
@@ -18,9 +19,9 @@ export default function Featured() {
         <div className="flex flex-col space-y-3 justify-around items-start md:pl-8">
           <p className="font-bold text-2xl">post title</p>
           <p className="text-sm font-semibold">
-            post descriptggt descriptggggggggggggggggggiot
-            post descriptggt descriptggggggggggggggggggiopost descriptggt descriptggggggggggggggggggio
-            post descriptggt descriptggggggggggggggggggio
+            post descriptggt post descriptggt post descriptggt post descriptggt
+            post descriptggt post descriptggt descriptggt post descriptggt
+            post descriptggt post descriptggt post descriptggt post descriptggt
           </p>
           <button>
             read more
