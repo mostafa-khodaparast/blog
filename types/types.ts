@@ -9,3 +9,21 @@ export type CategoryProps = {
     title: string,
     img?: string | null
 }
+
+export type SearchParamsProps = {
+    searchParams: {
+        page?: string
+    }
+}
+
+export type PostProps = {
+    id: string,
+    createdAt: Date,
+    slug: string,
+    title: string,
+    desc: string,
+    img: string | null,
+    views: number,
+    catSlug: string,
+    userEmail: string
+}
