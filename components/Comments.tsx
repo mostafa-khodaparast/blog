@@ -1,14 +1,17 @@
+"use client"
+
+import { useSession } from 'next-auth/react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Comments() {
 
-    const loginStatus = 'authenticated'
+    const { status } = useSession()
 
     return (
         <div>
             <h2>Comments</h2>
-            {loginStatus === 'authenticated' ?
+            {status === 'authenticated' ?
                 (
                     <div className='flex items-center space-x-2'>
                         <textarea placeholder='write comment...' className='w-[80%] p-1 bg-slate-400 rounded-md focus:outline-none border-none dark:bg-slate-400' />
@@ -16,7 +19,12 @@ export default function Comments() {
                     </div>
                 )
                 :
-                <Link href='/login'>Login to write comment </Link>
+                <Link
+                    href='/login'
+                    className='text-center bg-custom-primary text-white rounded-lg flex justify-center p-3'
+                >
+                    Login to write comment
+                </Link>
             }
             <div>
                 <div className="flex items-center my-3 max-w-max">
@@ -32,11 +40,11 @@ export default function Comments() {
                             mostafa
                         </Link>
                         <span className="dark:text-gray-400">
-                            2024-12-14
+                            .4/12/2023
                         </span>
                     </div>
                 </div>
-                <p>user comment</p>
+                <p>this was great.</p>
             </div>
         </div>
     )

@@ -1,8 +1,8 @@
-//import { cardList } from "@/constants"
+
 import { POST_PER_PAGE } from "@/constants"
 import { CardItem, Pagination } from "."
 import { getPosts } from "@/actions"
-import { PostProps } from "@/types/types"
+
 
 
 export default async function CardList({ pageNumber }: { pageNumber: number }) {

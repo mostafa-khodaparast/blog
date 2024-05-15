@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 
 export default function Featured() {
@@ -19,13 +20,16 @@ export default function Featured() {
         <div className="flex flex-col space-y-3 justify-around items-start md:pl-8">
           <p className="font-bold text-2xl">post title</p>
           <p className="text-sm font-semibold">
-            post descriptggt post descriptggt post descriptggt post descriptggt
-            post descriptggt post descriptggt descriptggt post descriptggt
-            post descriptggt post descriptggt post descriptggt post descriptggt
+          Highly motivated frontend developer. A quick learner who embraces
+          new technologies. Collaborative team player with the ability to work
+          closely with designers and other developers.
+          Highly motivated frontend developer. A quick learner who embraces
+          new technologies. Collaborative team player with the ability to work
+          closely with designers and other developers.
           </p>
-          <button>
+          <Link href='/1' className="underline">
             read more
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import { PostProps } from "@/types/types"
 import Image from "next/image"
+import Link from "next/link"
 
 
 export default function CardItem({ card }: { card: PostProps }) {
@@ -24,9 +25,9 @@ export default function CardItem({ card }: { card: PostProps }) {
                 <p className="text-sm font-semibold">
                     {desc}
                 </p>
-                <button>
+                <Link href='/1' className="underline">
                     read more
-                </button>
+                </Link>
             </div>
         </div>
     )

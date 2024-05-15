@@ -5,6 +5,7 @@ import Link from "next/link";
 
 
 export default function SinglePostPage() {
+
     return (
         <div>
             <div className="flex flex-col md:flex-row md:justify-evenly md:items-center">
@@ -14,7 +15,7 @@ export default function SinglePostPage() {
                     </p>
                     <div className="flex items-center my-3 max-w-max">
                         <Image
-                            src="/images/culture.png"
+                            src="/images/mostafakh.jpg"
                             width={50}
                             height={50}
                             alt="editor"
